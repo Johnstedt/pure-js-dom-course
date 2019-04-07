@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 3</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Uppgift 3</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="search-template">
+            <h1>Sökning av livsmedel</h1>
+
+            <form class="form">
+                <div class="form-group">
+                    <label for="search-word">Livsmedel</label>
+                    <input type="search" class="form-control" id="search-word" placeholder="t ex makaroner">
+                </div>
+                <button type="button" class="btn btn-default" id="sok-button">Sök</button>
+            </form>
+            <table id="search-table" class="table">
+                <thead>
+                    <tr>
+                        <th>Livsmedel</th>
+                        <th>Energi (kcal/100g)</th>
+                        <th>Kolhydrater</th>
+                        <th>Protein</th>
+                        <th>Fett</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <!-- /.container -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="scripts/getLivsmedelsData.js"></script>
+</body>
+
+</html>

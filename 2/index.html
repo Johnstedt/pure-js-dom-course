@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Individuell uppgift 2 - Tabellhantering och beräkning</title>
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="header" class="text-center px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+            <h1 class="display-4">Hemelektronik</h1>
+            <p class="lead">Se våra utmärkta priser på hemelektronik i tabellen nedan</p>
+        </div>
+        <div id="content">
+            <table id="pricetable" class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Artikelnr</th>
+                        <th>Produkttyp</th>
+                        <th>Varumärke</th>
+                        <th>Pris</th>
+                        <th>Antal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>23456789</td>
+                        <td>Telefon</td>
+                        <td>Apple</td>
+                        <td>6500</td>
+                        <td>
+                            <input type="text" size="3" value="1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22256289</td>
+                        <td>Telefon</td>
+                        <td>Samsung</td>
+                        <td>6200</td>
+                        <td>
+                            <input type="text" size="3" value="1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>24444343</td>
+                        <td>Telefon</td>
+                        <td>Huawei</td>
+                        <td>4200</td>
+                        <td>
+                            <input type="text" size="3" value="1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19856639</td>
+                        <td>Surfplatta</td>
+                        <td>Apple</td>
+                        <td>4000</td>
+                        <td>
+                            <input type="text" size="3" value="1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>39856639</td>
+                        <td>Surfplatta</td>
+                        <td>Samsung</td>
+                        <td>2800</td>
+                        <td>
+                            <input type="text" size="3" value="1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12349862</td>
+                        <td>Surfplatta</td>
+                        <td>Huawei</td>
+                        <td>3500</td>
+                        <td>
+                            <input type="text" size="3" value="1" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="scripts/calculate.js"></script>
+</body>
+
+</html>

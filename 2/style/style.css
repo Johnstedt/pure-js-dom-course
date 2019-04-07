@@ -1,0 +1,11 @@
+.table {
+    background: white;
+} 
+
+tr#sumrow {
+    background-color: #cce4ff;
+}
+
+tr#sumrow td:first-child::after{
+    content: "\a0";
+}
