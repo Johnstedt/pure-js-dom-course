@@ -8,13 +8,13 @@ document.getElementsByClassName("thead-dark")[0].children[0].innerHTML +=
 
 // Add summation row, add to markup instead.
 document.getElementById("pricetable").children[1].innerHTML +=
-    " <tr>\n" +
-    "<td>Summation</td>\n" +
-    "<td> - </td>\n" +
-    "<td> - </td>\n" +
-    "<td> - </td>\n" +
-    "<td> - </td>\n" +
-    "<td> - </td>\n" +
+    " <tr id='sumrow'>\n" +
+    "<td></td>\n" +
+    "<td></td>\n" +
+    "<td></td>\n" +
+    "<td></td>\n" +
+    "<td></td>\n" +
+    "<td></td>\n" +
     "</tr>";
 
 // Calculates sum of each product.
@@ -39,11 +39,11 @@ document.getElementById("calculate").addEventListener("click",(()=>{
 
     let table = document.getElementById("pricetable").children[1].children;
     table[table.length-1].innerHTML =
-        " <tr>\n" +
-        "<td>Summation</td>\n" +
-        "<td> - </td>\n" +
-        "<td> - </td>\n" +
-        "<td> - </td>\n" +
+        " <tr id='sumrow'>\n" +
+        "<td></td>\n" +
+        "<td></td>\n" +
+        "<td></td>\n" +
+        "<td></td>\n" +
         "<td>"+items+"</td>\n" +
         "<td>"+total+"</td>\n" +
         "</tr>";
